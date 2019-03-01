@@ -11,15 +11,15 @@ const initialState = {
 export default function (state=initialState, action) {
      switch (action.type){
         case GET_PARTS_BY_SUBGROUP:
-            console.log('reduser GET_PARTS_BY_SUBGROUP',action.payload);
+            // console.log('reduser GET_PARTS_BY_SUBGROUP',action.payload);
             return {...state, partsBySubgroup: action.payload.parts};
 
         case TAB_ACTIVATOR:
-             console.log('reduser TAB_ACTIVATOR',action.payload);
+             // console.log('reduser TAB_ACTIVATOR',action.payload);
             return {...state, tabClassName: action.payload};
 
          case IS_SHOWN_PARTS:
-             console.log('reduser IS_SHOWN_PARTS',action.payload);
+             // console.log('reduser IS_SHOWN_PARTS',action.payload);
              return {...state, isShownParts: action.payload};
 
         default:

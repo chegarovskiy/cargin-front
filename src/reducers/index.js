@@ -1,20 +1,20 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
-import ActiveCar from './car-active'
-import MarksUpdateStoreFromReduser from './marks'
-import ModelsUpdateStoreFromReduser from './models'
-import modalSearch from './modalSearch'
-import ModelsByMark from './models-by-mark'
-import TypesUpdateStoreFromReduser from './types'
-import TypesByModel from './types-by-model'
-import SubgroupsUpdateStoreFromReduser from './subgroups'
-import SubgroupsByType from './subgoups-by-type'
-import PartsUpdateStoreFromReduser from './parts'
-import PartsBySubgroup from './parts-by-subgroup'
-import PartsInCard from './card'
-import isShownPayment from './paymetn'
-import sendEmail from './send-email'
-import PopUp from './popup'
+import ActiveCar from './car-active';
+import MarksUpdateStoreFromReduser from './marks';
+import ModelsUpdateStoreFromReduser from './models';
+import modalSearch from './modalSearch';
+import ModelsByMark from './models-by-mark';
+import TypesUpdateStoreFromReduser from './types';
+import TypesByModel from './types-by-model';
+import SubgroupsUpdateStoreFromReduser from './subgroups';
+import SubgroupsByType from './subgoups-by-type';
+import PartsUpdateStoreFromReduser from './parts';
+import PartsBySubgroup from './parts-by-subgroup';
+import PartsInCard from './card';
+import sendEmail from './send-email';
+import PopUp from './popup';
+import Body from './body';
 
 
 const rootReducer = combineReducers({
@@ -30,12 +30,12 @@ const rootReducer = combineReducers({
     parts_all: PartsUpdateStoreFromReduser,
     partsBySubgroup: PartsBySubgroup,
     partsInCard: PartsInCard,
-    isShownPayment: isShownPayment,
     sendEmail: sendEmail,
-    popUp: PopUp
+    popUp: PopUp,
+    body: Body,
 
 
 
 });
 
-export default rootReducer
+export default rootReducer;

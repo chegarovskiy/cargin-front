@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-// import {bindActionCreators} from 'redux';
-// import {connect} from 'react-redux';
-import './payment.css'
-import {bindActionCreators} from "redux";
-import {isShowPaymentView} from "../../../actions/paymant";
-
 import connect from "react-redux/es/connect/connect";
+import './payment.css'
+
+import {bindActionCreators} from "redux";
+import {setBodyDataType} from "../../../actions/body";
+import {BODY_DATA_TYPES} from '../../../enums/enum-body'
+
+
 
 class Payment extends Component {
 
@@ -13,19 +14,9 @@ class Payment extends Component {
         super(props);
     }
 
-    _renderDataPayment() {
-        console.log("adsfasdf");
-        return (
-
-            <div className="payment-data">
-                страница оплаты
-            </div>
-        )
-    }
-
     render() {
         return (
-            <div className="payment" onClick={() => {this.props.isShownPayment(true)}}>
+            <div className="payment" onClick={() => {this.props.setBodyDataType(BODY_DATA_TYPES.PAYMENT)}}>
                 <div className="separator"></div>
                 <div className="payment-text basic-hover">
                     Оплата
@@ -36,21 +27,16 @@ class Payment extends Component {
 }
 
 function mapStateToProps(state) {
-    // console.log(, state);
     return {
-        isShownPayment: state.isShownPayment
+
     }
-
 }
-
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
-        isShownPayment: isShowPaymentView
-
+        setBodyDataType: setBodyDataType
     }, dispatch)
 
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Payment);
