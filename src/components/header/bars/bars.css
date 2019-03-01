@@ -1,0 +1,11 @@
+.bars{
+    display: flex;
+    flex-direction: row;
+
+    border-style: solid;
+	border-color: #0B6D99;
+	border-width: 1px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}

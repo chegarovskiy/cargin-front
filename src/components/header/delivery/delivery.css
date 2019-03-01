@@ -1,0 +1,20 @@
+.delivery{
+    display: flex;
+    flex-direction: row;
+    background-color: #F1F3F4;
+    /*border-left-style: solid;*/
+	/*border-left-color: #0B6D99;*/
+	/*border-left-width: 1px;*/
+    justify-content: center;
+    align-items: center;
+    /*padding-right: 4px;*/
+    /*padding-left: 4px;*/
+    cursor: default;
+}
+
+.delivery-text{
+    font-size: 13px;
+    color: #606975;
+    font-weight: 600;
+
+}

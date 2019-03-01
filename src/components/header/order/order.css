@@ -1,0 +1,52 @@
+.order{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 3px 0px 3px;
+    border-style: solid;
+	border-color: #0B6D99;
+	border-width: 1px;
+    justify-content: center;
+    align-items: center;
+    color: #F1F3F4;
+
+}
+
+.order-text{
+        padding-left: 3px;
+    }
+
+
+.order-icon-conteiner{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-counter {
+    color: red;
+    position: absolute;
+    padding-left: 10px;
+    padding-bottom: 9px;
+    font-weight: bold;
+}
+
+.order-i{
+    margin-bottom: -20px;
+}
+
+.order-icon-item{
+    position: relative;
+    top: -20px;
+
+}
+
+@media (max-width: 520px) {
+    .order-text{
+        display: none;
+    }
+    .order{
+        padding-right: 8px;
+    }
+}
+

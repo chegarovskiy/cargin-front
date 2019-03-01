@@ -1,0 +1,27 @@
+.contacts{
+    display: flex;
+    flex-direction: row;
+
+    background-color: #F1F3F4;
+    /*border-style: solid;*/
+	/*border-color: #0B6D99;*/
+	/*border-width: 1px;*/
+    justify-content: center;
+    align-items: center;
+    padding-left: 2px;
+    /*padding-right: 2px;*/
+}
+
+.fa-mobile-alt{
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #606975;
+}
+
+.phone-number{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #606975;
+    font-size: 13px;
+}
+

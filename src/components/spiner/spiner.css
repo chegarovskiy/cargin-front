@@ -1,0 +1,34 @@
+
+/*.wait {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*text-align: center;*/
+  /*z-index: 999999;*/
+  /*background: inherit;*/
+  /*background: radial-gradient(circle, rgba(0,0,0,0.6), rgba(0,0,0,0));*/
+  /*border: none;*/
+  /*border-radius: 0px;*/
+  /*-moz-box-shadow: none;*/
+  /*-webkit-box-shadow: none;*/
+  /*box-shadow: none;*/
+  /*&:after {*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*height: 100%;*/
+    /*vertical-align: middle;*/
+  /*}*/
+  /*transition: z-index 0s, opacity 0.5s ease-in 0.2s;*/
+/*}*/
+
+/*.wait-visible {*/
+  /*z-index: 999999;*/
+  /*opacity: 1;*/
+/*}*/
+
+/*.wait-hidden {*/
+  /*z-index: -999999;*/
+  /*opacity: 0;*/
+/*}*/
