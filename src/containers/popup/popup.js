@@ -37,7 +37,7 @@ class PopUp extends Component{
 }
 
 function mapStateToProps(state) {
-    console.log('+++++PopUpstate', state);
+    // console.log('+++++PopUpstate', state);
     return {
         isShown: state.popUp.isShownPopUp,
         message: state.popUp.popUpMassage,

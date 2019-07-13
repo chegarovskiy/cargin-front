@@ -29,8 +29,26 @@ export function putModelsToDb() {
 export function getModelsByMark(selectedMark) {
     return function (dispatch) {
         axios.get(`http://127.0.0.1:8000/__api__/marks/${selectedMark.referred_id}/`)
-            .then((respons)=>{dispatch({type: GET_MODELS_BY_MARK, payload: respons.data})})
-            .then(()=>{dispatch({type: TAB_ACTIVATOR, payload: "nav-link-models"})})
+            .then((respons)=>{
+                if (respons.status === 200){
+                    console.log('ok:: data status::',respons.status);
+                    if(respons.data !== undefined){
+                        dispatch({type: GET_MODELS_BY_MARK, payload: respons.data.models});
+                        console.log('ok:: data respons::',respons.data);
+                    }else {
+                        console.log('errror::',`http://127.0.0.1:8000/__api__/marks/${selectedMark.referred_id}/`);
+                        console.log('errror:: status code respons::',respons.status);
+                        console.log('errror:: data respons::',respons.data);
+                    }
+                }else {
+                    console.log('errror::',`http://127.0.0.1:8000/__api__/marks/${selectedMark.referred_id}/`);
+                    console.log('errror:: status code respons::',respons.status);
+                    console.log('errror:: data respons::',respons.data);
+                }})
+            .then(()=>{dispatch({type: TAB_ACTIVATOR, payload: "nav-link-models"})
+
+            })
+
 
 
     }

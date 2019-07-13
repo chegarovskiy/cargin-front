@@ -34,7 +34,7 @@ class SearchByCar extends Component {
     }
 
     showModelListByMark(){
-      // console.log('props.modelsByMark.modelsByMark',this.props.modelsByMark.modelsByMark);
+      console.log('props.modelsByMark.modelsByMark',this.props.modelsByMark.modelsByMark);
         return this.props.modelsByMark.modelsByMark.map(
             (model) => {return (
                 <div className="type-list-margin" key={model.referred_id.toString()}

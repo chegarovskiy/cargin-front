@@ -11,7 +11,7 @@ export default function (state=initialState, action) {
      switch (action.type){
         case GET_MODELS_BY_MARK:
             console.log('reduser GET_MODELS_BY_MARK',action.payload)
-            return {...state, modelsByMark: action.payload.models};
+            return {...state, modelsByMark: action.payload};
 
         case TAB_ACTIVATOR:
              console.log('reduser TAB_ACTIVATOR',action.payload)

@@ -28,7 +28,7 @@ class Order extends Component {
 
 
 function mapStateToProps(state) {
-    console.log('email_data',state.partsInCard.partsInCard.length);
+    // console.log('email_data',state.partsInCard.partsInCard.length);
     return {
         email_data: state.email_data,
         countLineInCard: state.partsInCard.partsInCard.length

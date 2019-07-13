@@ -1,8 +1,5 @@
 import axios from 'axios';
 import {openModal, TAB_ACTIVATOR} from "./modalSearch";
-import {GET_MODELS_BY_MARK} from "./models";
-
-
 export const GET_MARKS = 'GET_MARKS';
 export const PUT_MARKS_TO_DB = 'PUT_MARKS_TO_DB';
 export const OPEN_MODAL = 'OPEN_MODAL';
