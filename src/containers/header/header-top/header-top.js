@@ -5,8 +5,7 @@ import Contacts from "../../../components/header/contacts/contacts";
 import Payment from "../../../components/header/paymetn/payment";
 import Delivery from "../../../components/header/delivery/delivery";
 import Warranty from "../../../components/header/warranty/warranty";
-import "./header-top.css"
-
+import "./header-top.scss";
 
 class HeaderTop extends Component{
 
